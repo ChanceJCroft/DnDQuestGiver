@@ -1,5 +1,5 @@
 <footer class="footer">
-<p>&copy; 2020 Chance Croft</p>
+<p>&copy; Chance Croft 2020</p>
 </footer>
 
 </div> <!---- /containter ---->
