@@ -14,17 +14,18 @@
     </form>
 </div>
 
-<h3><?php echo $title; ?></h3>
+<h3 style="text-align: center;"><?php echo $title; ?></h3>
 
 
 <?php foreach($quests as $quest): ?>
-<div class="row marketing">
+<div class="row marketing" style="border: .5px solid grey; padding: 10px;">
   <div class="col-md-10">
-    <h4><?php echo $quest->quest_name; ?></h4>
-    <p><?php echo $quest->description; ?></p>
+    <h4><strong><?php echo $quest->quest_name; ?></strong> - Level <?php echo $quest->quest_level; ?></h4>
+    <p>Reward: <?php echo $quest->reward; ?></p>
+    <small>Created By: <?php echo $quest->created_by; ?></small>
   </div>
   <div class="col-md-2">
-    <a class="btn btn-primary" href="quest.php?=<?php echo $quest->id; ?>">View</a>
+    <a style="margin-top: 20px;" class="btn btn-primary" href="quest.php?id=<?php echo $quest->id; ?>">View</a>
   </div>
 </div>
 <?php endforeach; ?>

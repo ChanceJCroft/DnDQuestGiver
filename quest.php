@@ -5,6 +5,14 @@ include_once './config/init.php'; ?>
 $quest = new Quest;
 
 
+if(isset($_POST['del_id'])){
+    $del_id = $_POST['del_id'];
+    if($quest->delete($del_id)){
+        redirect('index.php', 'Job Deleted', 'success');
+    } else {
+        redirect('index.php', 'Job Not Deleted', 'error');
+    }
+}
 
 
 $template = new Template('templates/quest-single.php');
@@ -12,6 +20,6 @@ $template = new Template('templates/quest-single.php');
 $quest_id = isset($_GET['id']) ? $_GET['id'] : null;
 
 
-$template->quest = $quest->getQuest($quest_id);
+$template->quests = $quest->getQuest($quest_id);
 
 echo $template;

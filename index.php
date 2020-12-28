@@ -6,7 +6,6 @@ $quest = new Quest;
 
 
 
-
 $template = new Template('templates/frontpage.php');
 
 $category = isset($_GET['category']) ? $_GET['category'] : null;
