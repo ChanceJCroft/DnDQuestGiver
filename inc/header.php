@@ -18,7 +18,10 @@
                 <br>
                 <li role="presentation" style="padding: 10px;"><a href="create.php">Create Quest</a></li>
                 <br>
+                <li role="presentation" style="padding: 10px;"><a href="new-user.php">Sign Up</a></li>
+                <br>
+                <li role="presentation" style="padding: 10px;"><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </div>
-    <?php displayMessage(); ?>
+    <?php if(isset($_SESSION['message']))  displayMessage() ; ?>

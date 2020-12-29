@@ -4,10 +4,17 @@
   <h1 class="display-4">Search for a Quest</h1>
     <form method="GET" action="index.php">
       <select name="category" class="form-control">
-        <option value="0">Choose Category</option>
+        <option value="0">Search By Category</option>
         <?php foreach($categories as $category): ?>
           <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
         <?php endforeach; ?>
+      </select>
+      <small>OR</small>
+      <select name="level" class="form-control">
+      <option value="0">Search By Level</option>
+      <?php foreach($quests as $quest): ?>
+        <option value="<?php echo $quest->quest_level; ?>"><?php echo $quest->quest_level; ?></option>
+      <?php endforeach; ?>
       </select>
       <br>
       <input type="submit" class="btn btn-lg btn-success" value="SEARCH">

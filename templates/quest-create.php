@@ -30,6 +30,10 @@
             <label>Description</label>
             <textarea class="form-control" name="description"></textarea>
         </div>
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" class="form-control" name="img_url">
+        </div>
         <input type="submit" class="btn btn-primary" value="Submit" name="submit">
     </form>
 

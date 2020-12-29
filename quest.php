@@ -8,9 +8,9 @@ $quest = new Quest;
 if(isset($_POST['del_id'])){
     $del_id = $_POST['del_id'];
     if($quest->delete($del_id)){
-        redirect('index.php', 'Job Deleted', 'success');
+        redirect('index.php', 'Quest Deleted', 'success');
     } else {
-        redirect('index.php', 'Job Not Deleted', 'error');
+        redirect('index.php', 'Quest Not Deleted', 'error');
     }
 }
 
