@@ -3,6 +3,18 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+#questPicture {
+  max-width: 250px;
+  height: auto;
+
+}
+
+#questPicWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   /* Everything but the jumbotron gets side spacing for mobile first views */
   .header,
@@ -63,7 +75,6 @@ body {
       padding-right: 0;
       padding-left: 0;
     }
-    /* Space out the masthead */
     .header {
       margin-bottom: 30px;
     }
@@ -73,12 +84,25 @@ body {
     }
   }
   
-   /* RD: making vertical align great again */
   .table > tbody > tr > td {
        vertical-align: middle;
   }
 
   .light-padding {
         padding: 10px;
-  }
+        
+      }
   
+/*.gridForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+} */

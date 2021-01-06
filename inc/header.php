@@ -10,9 +10,9 @@
 </head>
 <body>
 <div class="container">
-    <div class="header">
+    <div class="header" style="max-width: 100%;">
     <h3 class="text-muted" style="padding: 10px;"><?php echo SITE_TITLE; ?></h3>
-        <nav>
+    <nav>
             <ul class="nav nav-pills pull-right">
                 <li role="presentation" class="active" style="padding: 10px;"><a href="index.php">Home</a></li>
                 <br>

@@ -9,7 +9,9 @@
     <li class="list-group-item"><strong>Quest Giver: <?php echo $quests->quest_giver; ?></strong></li>
     <li class="list-group-item"><strong>Quest Reward: <?php echo $quests->reward; ?></strong></li>
 </ul>
-<img src=<?php echo $quests->img_url; ?> />
+<div id="questPicWrapper">
+    <img src="<?php echo $quests->image_url; ?>" id="questPicture" />
+</div>
 <br><br>
 <a href="index.php">Go Back</a>
 <br><br>

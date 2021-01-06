@@ -2,14 +2,14 @@
 
 <div class="jumbotron">
   <h1 class="display-4">Search for a Quest</h1>
-    <form method="GET" action="index.php">
+    <form method="GET" action="index.php" class="gridForm">
       <select name="category" class="form-control">
         <option value="0">Search By Category</option>
         <?php foreach($categories as $category): ?>
           <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
         <?php endforeach; ?>
       </select>
-      <small>OR</small>
+      <small style="margin: auto 10%;">OR</small>
       <select name="level" class="form-control">
       <option value="0">Search By Level</option>
       <?php foreach($quests as $quest): ?>
@@ -17,7 +17,7 @@
       <?php endforeach; ?>
       </select>
       <br>
-      <input type="submit" class="btn btn-lg btn-success" value="SEARCH">
+      <input type="submit" class="btn btn-lg btn-success" value="SEARCH" style="justify-content: center;">
     </form>
 </div>
 
@@ -31,8 +31,8 @@
     <p>Reward: <?php echo $quest->reward; ?></p>
     <small>Created By: <?php echo $quest->created_by; ?></small>
   </div>
-  <div class="col-md-2">
-    <a style="margin-top: 20px;" class="btn btn-primary" href="quest.php?id=<?php echo $quest->id; ?>">View</a>
+  <div class="col-md-2" style="margin: auto;">
+    <a class="btn btn-primary" href="quest.php?id=<?php echo $quest->id; ?>">View</a>
   </div>
 </div>
 <?php endforeach; ?>
