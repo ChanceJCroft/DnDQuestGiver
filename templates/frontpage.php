@@ -28,6 +28,7 @@
 <div class="row marketing" style="border: .5px solid grey; padding: 10px;">
   <div class="col-md-10">
     <h4><strong><?php echo $quest->quest_name; ?></strong> - Level <?php echo $quest->quest_level; ?></h4>
+    <p>Quest Category: <?php echo $quest->category_id; ?></p>
     <p>Reward: <?php echo $quest->reward; ?></p>
     <small>Created By: <?php echo $quest->created_by; ?></small>
   </div>
